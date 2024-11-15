@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<img id="myImage" src="image1.jpg" alt="Image" onclick="changeImage()">
+<img id="myImage" src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/183389/classic-350-right-side-view-62.jpeg?isig=0&q=80" alt="Image" onclick="changeImage()">
 
 <script>
     let currentImage = 1;
@@ -22,10 +22,10 @@
         const imgElement = document.getElementById('myImage');
 
         if (currentImage === 1) {
-            imgElement.src = 'image2.jpg'; // Change to image 2
+            imgElement.src = 'https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fbike-images%2Fcolors%2Froyal-enfield%2Fclassic-350%2Froyal-enfield-classic-350-gun-grey.jpg%3Fv%3D1726488811&w=640&q=75'; // Change to image 2
             currentImage = 2; // Update current image state
         } else {
-            imgElement.src = 'image1.jpg'; // Change back to image 1
+            imgElement.src = 'https://5.imimg.com/data5/GU/US/GLADMIN-27616604/royal-enfield-classic-desert-storm-500x500.jpg'; // Change back to image 1
             currentImage = 1; // Update current image state
         }
     }
