@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image on Click</title>
+    <style>
+        img {
+            width: 300px; /* Set the desired width */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+    </style>
+</head>
+<body>
+
+<img id="myImage" src="image1.jpg" alt="Image" onclick="changeImage()">
+
+<script>
+    let currentImage = 1;
+
+    function changeImage() {
+        const imgElement = document.getElementById('myImage');
+
+        if (currentImage === 1) {
+            imgElement.src = 'image2.jpg'; // Change to image 2
+            currentImage = 2; // Update current image state
+        } else {
+            imgElement.src = 'image1.jpg'; // Change back to image 1
+            currentImage = 1; // Update current image state
+        }
+    }
+</script>
+
+</body>
+</html>
